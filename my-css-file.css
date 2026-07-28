@@ -1,12 +1,14 @@
 h4 {
-    font-size: 250px;
-    margin: 0;
+    font-size: 125px;
+    margin-left: 350px;
     text-shadow:
-2px 2px 0 #000,
--2px 2px 0 #000,
--2px -2px 0 #000,
-2px -2px 0 #000;
+2px 2px 0 #ffffff,
+-2px 2px 0 #ffffff,
+-2px -2px 0 #fefefe,
+2px -2px 0 #ffffff;
     transform: rotate(15deg);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .rainbow span:nth-child(1) { color: purple; }
@@ -16,7 +18,7 @@ h4 {
 .rainbow span:nth-child(5) { color: rgb(249, 100, 100); }
 .rainbow span:nth-child(6) { color: rgb(248, 4, 4); }
 body{
-    background-color: rgb(176, 230, 230);
+    background-color: rgb(7, 0, 23);
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
@@ -26,13 +28,42 @@ body{
     min-height: none;
 }
 
+nav{
+    background-color: rgb(251, 136, 255);
+    width: max-content;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
 h1{
-    font-size: 60px;
+    font-size: 30px;
     font-family: cursive;
+    color: white;
+    margin-left: 350px;
+    margin-top: 0;
+
 
 }
 
 h3{
-    margin-right: 500px;
+    margin-right: 250px;
     font-size: 30px;
+    color: white;
+    margin-left: 450px;
+    margin-top: 0;
+    
+
+
+    
+
+}
+
+h2{
+    color: white;
+    margin-left: 350px;
+    margin-top: 100px;
 }
