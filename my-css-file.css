@@ -1,3 +1,38 @@
-h1 {
-    color:red;
+h4 {
+    font-size: 250px;
+    margin: 0;
+    text-shadow:
+2px 2px 0 #000,
+-2px 2px 0 #000,
+-2px -2px 0 #000,
+2px -2px 0 #000;
+    transform: rotate(15deg);
+}
+
+.rainbow span:nth-child(1) { color: purple; }
+.rainbow span:nth-child(2) { color: yellow; }
+.rainbow span:nth-child(3) { color: rgb(67, 240, 19); }
+.rainbow span:nth-child(4) { color: rgb(30, 85, 236); }
+.rainbow span:nth-child(5) { color: rgb(249, 100, 100); }
+.rainbow span:nth-child(6) { color: rgb(248, 4, 4); }
+body{
+    background-color: rgb(176, 230, 230);
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height: none;
+}
+
+h1{
+    font-size: 60px;
+    font-family: cursive;
+
+}
+
+h3{
+    margin-right: 500px;
+    font-size: 30px;
 }

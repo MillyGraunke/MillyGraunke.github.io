@@ -1,5 +1,16 @@
 h1 {
-    font-family:;
+    font-family: 'Comic sans MS', cursive, sans-serif;
+    size: 2cap;
+      font-size: 5rem;
+    color: #061e50; /* Base color */
+    text-shadow:
+      2px 2px 0 #716ee0,
+      4px 4px 0 #786bd8,
+      6px 6px 8px rgba(0, 0, 0, 0.3); /* Layered shadows for depth */
+    -webkit-text-stroke: 2px white; /* Outline for bubble effect */
+    padding: 20px;
+    border-radius: 20px;
+  
 }
 
 a:link{
@@ -11,8 +22,9 @@ a:link{
 }
 
 body{
-    background-color: aqua;
-    margin:0;
+    background-color: rgb(176, 230, 230);
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -20,3 +32,6 @@ body{
     min-height: none;
 }
 
+.box{
+border: 1px solid black;
+}
