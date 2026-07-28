@@ -1,0 +1,22 @@
+h1 {
+    font-family:;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:link{
+    color:crimson;
+}
+
+body{
+    background-color: aqua;
+    margin:0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height: none;
+}
+
