@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(211, 246, 255);
+    background-image: url(images/star.png);
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
@@ -10,8 +10,11 @@ body{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 100px;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    text-decoration: underline;
+    color: rgb(0, 0, 13);
+    margin: 0px;
 }
 
 .cinzel-decorative-regular {
@@ -30,4 +33,24 @@ h1{
   font-family: "Cinzel Decorative", serif;
   font-weight: 900;
   font-style: normal;
+}
+
+.milly{
+    margin-right: 90px;
+}
+
+
+.side{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 1rem;
+}
+
+.sidebar img{
+    width: 500px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 0px;
 }
