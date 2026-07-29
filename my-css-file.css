@@ -2,10 +2,10 @@ h4 {
     font-size: 175px;
     margin-left: 250px;
     text-shadow:
-2px 2px 0 #ffffff,
--2px 2px 0 #ffffff,
--2px -2px 0 #fefefe,
-2px -2px 0 #ffffff;
+2px 2px 0  rgb(28, 28, 28),
+-2px 2px 0  rgb(28, 28, 28),
+-2px -2px 0  rgb(28, 28, 28),
+2px -2px 0  rgb(28, 28, 28);
     transform: rotate(15deg);
     margin-top: 0;
     margin-bottom: 0;
@@ -18,7 +18,7 @@ h4 {
 .rainbow span:nth-child(5) { color: rgb(249, 100, 100); }
 .rainbow span:nth-child(6) { color: rgb(248, 4, 4); }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(138, 59, 255);
     margin-left: 100px;
     margin-right: 10px;
     display: flex;
@@ -64,7 +64,7 @@ a{
 h1{
     font-size: 50px;
     font-family: cursive;
-    color: white;
+    color:  rgb(28, 28, 28);
     margin-left: 350px;
     margin-top: 0;
 
@@ -74,7 +74,7 @@ h1{
 h3{
     margin-right: 10px;
     font-size: 50px;
-    color: white;
+    color:  rgb(28, 28, 28);
     margin-left: 350px;
     margin-top: 0;
     
@@ -85,8 +85,8 @@ h3{
 }
 
 h2{
-    color: white;
-    margin-left: 350px;
+    color: rgb(28, 28, 28);
+    margin-left: 300px;
     margin-top: 100px;
     font-size: 55px;
 }
