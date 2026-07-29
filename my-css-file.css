@@ -1,6 +1,6 @@
 h4 {
-    font-size: 125px;
-    margin-left: 350px;
+    font-size: 175px;
+    margin-left: 250px;
     text-shadow:
 2px 2px 0 #ffffff,
 -2px 2px 0 #ffffff,
@@ -20,7 +20,7 @@ h4 {
 body{
     background-color: rgb(0, 0, 0);
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 10px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -39,8 +39,7 @@ body{
 .sidebar img{
     width: 500px;
     height: auto;
-    border-radius: 0px;
-    margin: 0px;
+    margin-top: 0px;
 }
 
 @media (max-width: 600px) {
@@ -62,20 +61,20 @@ a{
 }
 
 h1{
-    font-size: 30px;
+    font-size: 50px;
     font-family: cursive;
     color: white;
-    margin-left: 450px;
+    margin-left: 350px;
     margin-top: 0;
 
 
 }
 
 h3{
-    margin-right: 250px;
-    font-size: 30px;
+    margin-right: 10px;
+    font-size: 50px;
     color: white;
-    margin-left: 450px;
+    margin-left: 350px;
     margin-top: 0;
     
 
@@ -86,9 +85,9 @@ h3{
 
 h2{
     color: white;
-    margin-left: 425px;
+    margin-left: 350px;
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 55px;
 }
 
 h2{
@@ -100,3 +99,39 @@ h2{
 }
 
 
+/* 1. Reset browser default margins & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Make the nav span 100% of the screen */
+nav {
+    width: 2000px;
+    background-color: #1e293b; /* Dark slate background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;   /* Center the links horizontally */
+    align-items: center;
+    gap: 2rem;                 /* Adds clean space between each link */
+}
+
+/* 3. Style the links inside the nav */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+/* Optional: Highlight link on hover */
+nav a:hover {
+    color: #38bdf8; /* Light blue accent */
+}
+
+/* Page content spacing */
+main {
+    padding: 2rem;
+}
