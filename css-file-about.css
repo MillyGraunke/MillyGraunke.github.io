@@ -85,7 +85,7 @@ h2{
 img{
     border: 3px;
     border-color: rgba(165, 42, 42, 0.988);
-    margin-right: 200px;
+    margin: 0px;
 }
 
 .about-container {
