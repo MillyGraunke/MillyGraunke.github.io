@@ -1,120 +1,50 @@
-*{
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(249, 144, 144);
-    margin-left: 100px;
-    margin-right: 100px;
+body {
+    background-color: rgb(255, 231, 231);
     display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    min-height: none;
-}
- 
-h1{
-    font-size: 100px;
-    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
-    color: rgb(0, 0, 13);
-    margin-right: 500px;
-    margin-top: 0px;
-    margin-bottom:0px;
-    margin-left: 0px;
-    z-index: 5;
+    flex-direction: column;
+    align-items: center; /* Centers layout content horizontally */
+    min-height: 100vh;
 }
 
-h2{
-    font-size: 100px;
-    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+/* Typography Layout Rules */
+h1 {
+    font-size: 80px; /* Scaled down slightly to fit screens cleaner */
+    font-family: "Cinzel Decorative", serif; /* Falls back to your Google font rule */
     color: rgb(0, 0, 13);
-    margin-right:400px;
-    margin-top: 0px;
-    margin-bottom:0px;
-    margin-left: 0px;
-    z-index: 5;
+    margin: 0; /* Removed the 500px right margin blowout */
+    line-height: 1.1;
 }
 
 .cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
 }
 
 .cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
 }
 
 .cinzel-decorative-black {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
 }
 
-.milly{
-    margin-right: 400px;
-}
-
-
-
-
-
-.side{
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 2rem;
-    align-items: start;
-    padding: 1rem;
-}
-
-.sidebar img{
-    width: 500px;
-    height: auto;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-
-.highlight{
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-}
-
-img{
-    border: 3px;
-    border-color: rgba(165, 42, 42, 0.988);
-    margin: 0px;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;      /* Vertically aligns text and image */
-  justify-content: space-between; /* Spreads out text and image */
-  gap: 2rem;                /* Space between text and image */
-  max-width: 900px;         /* Keeps content from stretching too wide */
-  margin: 0 auto;           /* Centers the container on the page */
-}
-
-
-/* Keeps it stacked neatly on mobile screens */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
+/* Layout Structural Containers */
 nav {
-    width: 2000px;
-    background-color: #1e293b; /* Dark slate background */
+    width: 100%; /* Spans full screen width cleanly without horizontal blowout */
+    background-color: #1e293b;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: center;   /* Center the links horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 2rem;                 /* Adds clean space between each link */
+    gap: 2rem;
 }
 
 nav a {
@@ -125,17 +55,64 @@ nav a {
     transition: color 0.2s ease;
 }
 
-/* Optional: Highlight link on hover */
 nav a:hover {
-    color: #38bdf8; /* Light blue accent */
+    color: #38bdf8;
 }
 
-/* Page content spacing */
-main {
-    padding: 2rem;
-}
-
-.home{
+.home {
     text-decoration: underline;
     color: aqua;
+}
+
+/* Profile Section Content Core */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Pulls text and image together directly in the center */
+    gap: 4rem; /* Defines exact spacing gap between your text box and image */
+    max-width: 1200px;
+    width: 90%;
+    margin: 4rem auto; /* Clean spacing below navigation bar */
+}
+
+.intro-text {
+    flex: 1; /* Standardizes text column space allotment */
+    max-width: 550px;
+}
+
+.intro-text p {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #334155;
+    margin-top: 1.5rem;
+}
+
+.frame {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame img {
+    width: 100%;
+    max-width: 0px; /* Constrains profile image dimensions smoothly */
+    height: auto;
+    border: 3px solid rgba(165, 42, 42, 0.988); /* Fixed your syntax border bug */
+    border-radius: 8px; /* Optional clean subtle corner softening */
+}
+
+/* Fully Responsive Breakpoints */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column; /* Clean stack transformation for small viewports */
+        text-align: center;
+        gap: 2.5rem;
+        margin: 2rem auto;
+    }
+   
+    h1 {
+        font-size: 55px;
+    }
 }
