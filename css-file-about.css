@@ -53,15 +53,7 @@ h2{
     margin-right: 400px;
 }
 
-.frame {
-  width: 300px;
-  height: 200px;
-  border: 3px solid #cccccc00;
-  background: #7b1a1af5;
-  margin: auto;
-  padding: 15px 10px;
-  border-radius: 10px;
-}
+
 
 
 
@@ -103,17 +95,6 @@ img{
   margin: 0 auto;           /* Centers the container on the page */
 }
 
-/* Allows text block to expand gracefully */
-.intro-text {
-  flex: 1;
-}
-
-/* Sets exact image sizing in CSS */
-.frame img {
-  width: 300px;
-  height: auto;
-  display: block;
-}
 
 /* Keeps it stacked neatly on mobile screens */
 @media (max-width: 768px) {
