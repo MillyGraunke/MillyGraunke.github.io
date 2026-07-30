@@ -57,7 +57,6 @@ h2{
 
 
 
-
 .side{
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -83,6 +82,7 @@ img{
     border: 3px;
     border-color: rgba(165, 42, 42, 0.988);
     opacity: .9;
+    margin-right: 200px;
 }
 
 .about-container {
