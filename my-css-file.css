@@ -136,3 +136,8 @@ nav a:hover {
 main {
     padding: 2rem;
 }
+
+.home{
+    text-decoration: underline;
+    color: aqua;
+}

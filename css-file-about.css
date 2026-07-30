@@ -81,7 +81,6 @@ h2{
 img{
     border: 3px;
     border-color: rgba(165, 42, 42, 0.988);
-    opacity: .9;
     margin-right: 200px;
 }
 
@@ -102,4 +101,37 @@ img{
     flex-direction: column;
     text-align: center;
   }
+}
+
+nav {
+    width: 2000px;
+    background-color: #1e293b; /* Dark slate background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;   /* Center the links horizontally */
+    align-items: center;
+    gap: 2rem;                 /* Adds clean space between each link */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+/* Optional: Highlight link on hover */
+nav a:hover {
+    color: #38bdf8; /* Light blue accent */
+}
+
+/* Page content spacing */
+main {
+    padding: 2rem;
+}
+
+.home{
+    text-decoration: underline;
+    color: aqua;
 }
