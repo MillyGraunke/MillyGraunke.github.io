@@ -8,15 +8,27 @@ body{
     align-items: center;
     min-height: none;
 }
-
+ 
 h1{
     font-size: 100px;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
     color: rgb(0, 0, 13);
-    margin-right: 400px;
+    margin-right: 5s00px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom:0px;
     margin-left: 0px;
+    z-index: 5;
+}
+
+h2{
+    font-size: 100px;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    color: rgb(0, 0, 13);
+    margin-right:400px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin-left: 0px;
+    z-index: 5;
 }
 
 .cinzel-decorative-regular {
@@ -77,5 +89,36 @@ h1{
 
 img{
     border: 3px;
-    border-color: brown;
+    border-color: rgba(165, 42, 42, 0.988);
+    opacity: .9;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;      /* Vertically aligns text and image */
+  justify-content: space-between; /* Spreads out text and image */
+  gap: 2rem;                /* Space between text and image */
+  max-width: 900px;         /* Keeps content from stretching too wide */
+  margin: 0 auto;           /* Centers the container on the page */
+}
+
+/* Allows text block to expand gracefully */
+.intro-text {
+  flex: 1;
+}
+
+/* Sets exact image sizing in CSS */
+.frame img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+/* Keeps it stacked neatly on mobile screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
