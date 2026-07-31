@@ -1,3 +1,10 @@
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,10 @@
 }
 
 body {
-    background-color: rgb(255, 231, 231);
+   background-image: url("https://th.bing.com/th/id/OIP.vIPuMi9KJ3dfyeX2ohxmNAHaHa?w=175&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers layout content horizontally */
@@ -64,6 +74,10 @@ nav a:hover {
     color: aqua;
 }
 
+nav{
+    margin-bottom:30px;
+}
+
 /* Profile Section Content Core */
 .about-container {
     display: flex;
@@ -88,12 +102,17 @@ nav a:hover {
     margin-top: 1.5rem;
 }
 
-.frame {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
+.frame{
+    max-width:500px;
+    width:100%;
+    height:auto;
+    border:3px solid rgba(165,42,42,.988);
+    border-radius:8px;
+}
+
+.frame{
+    position: relative;
+    z-index:5;
 }
 
 .frame img {
@@ -117,4 +136,22 @@ nav a:hover {
     h1 {
         font-size: 55px;
     }
+}
+
+body{
+    background-image:url("https://th.bing.com/th/id/OIP.vIPuMi9KJ3dfyeX2ohxmNAHaHa?w=175&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+    background-repeat:repeat;      /* or use cover instead */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+}
+
+.frame{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    border:3px solid brown;
+    border-radius:8px;
+    display:block;
 }
