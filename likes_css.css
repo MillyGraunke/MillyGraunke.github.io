@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(255, 231, 231);
+    background-color: rgb(184, 240, 255);
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers layout content horizontally */
@@ -116,3 +116,35 @@ nav a:hover {
         font-size: 55px;
     }
 }
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.la-belle-aurore-regular {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+

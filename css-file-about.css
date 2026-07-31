@@ -93,6 +93,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
 
 .frame img {
@@ -101,6 +102,7 @@ nav a:hover {
     height: auto;
     border: 3px solid rgba(165, 42, 42, 0.988); /* Fixed your syntax border bug */
     border-radius: 8px; /* Optional clean subtle corner softening */
+    z-index: 5;
 }
 
 /* Fully Responsive Breakpoints */
