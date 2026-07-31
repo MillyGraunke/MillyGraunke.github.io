@@ -14,7 +14,7 @@ body {
 
 /* Typography Layout Rules */
 h1 {
-    font-size: 80px; /* Scaled down slightly to fit screens cleaner */
+    font-size: 150px; /* Scaled down slightly to fit screens cleaner */
     font-family: "Cinzel Decorative", serif; /* Falls back to your Google font rule */
     color: rgb(0, 0, 13);
     margin: 0; /* Removed the 500px right margin blowout */
@@ -45,6 +45,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 20px;
 }
 
 nav a {

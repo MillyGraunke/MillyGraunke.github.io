@@ -98,7 +98,7 @@ nav a:hover {
 
 .frame img {
     width: 100%;
-    max-width: 0px; /* Constrains profile image dimensions smoothly */
+    max-width: 500px; /* Constrains profile image dimensions smoothly */
     height: auto;
     border: 3px solid rgba(165, 42, 42, 0.988); /* Fixed your syntax border bug */
     border-radius: 8px; /* Optional clean subtle corner softening */
